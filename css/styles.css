@@ -723,6 +723,94 @@ p {
     margin: 0;
 }
 
+/* Institutional Adoption Slide */
+.institutional-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.institutional-card {
+    background: rgba(100, 108, 255, 0.2);
+    padding: 20px 16px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+}
+
+.inst-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.institutional-card h4 {
+    font-size: 15px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.institutional-card p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.missing-piece {
+    background: rgba(100, 108, 255, 0.15);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(100, 108, 255, 0.25);
+    text-align: center;
+}
+
+.missing-piece h4 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.missing-piece > p {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.three-pillars {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 20px 0;
+}
+
+.pillar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.pillar span {
+    font-size: 28px;
+}
+
+.pillar p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.article-source {
+    margin-top: 16px;
+}
+
+.article-source a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.article-source a:hover {
+    text-decoration: underline;
+}
+
 /* Traction Pre-Revenue */
 .traction-pre-revenue {
     text-align: center;
