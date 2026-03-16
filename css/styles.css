@@ -821,6 +821,95 @@ p {
     color: var(--primary-dark);
 }
 
+/* App Showcase Slide */
+.app-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.app-screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-screenshot {
+    text-align: center;
+}
+
+.app-screenshot img {
+    width: 160px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: 2px solid rgba(100, 108, 255, 0.3);
+}
+
+.app-screenshot p {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.app-features-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 8px;
+}
+
+.app-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.app-feature span {
+    font-size: 24px;
+}
+
+.app-feature p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Checkout Showcase */
+.checkout-showcase {
+    background: rgba(100, 108, 255, 0.1);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(100, 108, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.checkout-screenshots {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.checkout-shot {
+    text-align: center;
+}
+
+.checkout-shot img {
+    width: 140px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    border: 2px solid rgba(100, 108, 255, 0.3);
+}
+
+.checkout-shot p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
 /* Traction Pre-Revenue */
 .traction-pre-revenue {
     text-align: center;
