@@ -956,6 +956,53 @@ p {
     color: var(--text-secondary);
 }
 
+/* Checkout Links */
+.checkout-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checkout-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    padding: 20px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+    transition: all 0.2s;
+}
+
+.checkout-link:hover {
+    transform: translateX(4px);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(100, 108, 255, 0.15);
+}
+
+.checkout-link span:first-child {
+    font-size: 28px;
+}
+
+.checkout-link div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.checkout-link strong {
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.checkout-link span:last-child {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
 /* Traction Pre-Revenue */
 .traction-pre-revenue {
     text-align: center;
@@ -1151,6 +1198,11 @@ p {
     }
     
     .video-link {
+        background: white !important;
+        border: 1px solid rgba(100, 108, 255, 0.3) !important;
+    }
+    
+    .checkout-link {
         background: white !important;
         border: 1px solid rgba(100, 108, 255, 0.3) !important;
     }
