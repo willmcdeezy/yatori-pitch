@@ -744,6 +744,13 @@ p {
     margin-bottom: 12px;
 }
 
+.inst-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
 .institutional-card h4 {
     font-size: 15px;
     color: var(--text-primary);
