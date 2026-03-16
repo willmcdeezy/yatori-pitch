@@ -619,6 +619,208 @@ p {
     margin: 8px 0;
 }
 
+/* Product Cards (Solution Slide) */
+.three-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.product-card {
+    background: rgba(100, 108, 255, 0.2);
+    padding: 32px 24px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+}
+
+.product-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.product-card h4 {
+    color: var(--text-primary);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Products Flow (How It Works) */
+.products-flow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.flow-product {
+    background: rgba(100, 108, 255, 0.2);
+    padding: 32px 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+    text-align: center;
+}
+
+.flow-product-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.flow-icon {
+    font-size: 28px;
+}
+
+.flow-product h4 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.flow-product p {
+    font-size: 15px;
+}
+
+/* Institutional Trend (Market Slide) */
+.institutional-trend {
+    background: rgba(100, 108, 255, 0.15);
+    padding: 24px 32px;
+    border-radius: 12px;
+    margin-top: 32px;
+    border: 1px solid rgba(100, 108, 255, 0.25);
+    text-align: center;
+}
+
+.institutional-trend h4 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.institutional-trend p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Traction Pre-Revenue */
+.traction-pre-revenue {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.status-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.traction-description {
+    font-size: 20px;
+    color: var(--text-secondary);
+}
+
+.metric-note {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 8px;
+}
+
+/* Revenue Card Extras */
+.fee-note {
+    margin-top: 16px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.subscription-desc {
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+}
+
+/* Team Solo */
+.team-solo {
+    display: flex;
+    justify-content: center;
+}
+
+.team-member-large {
+    background: rgba(100, 108, 255, 0.2);
+    padding: 60px 80px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+    max-width: 600px;
+}
+
+.member-avatar-large {
+    width: 120px;
+    height: 120px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 auto 24px;
+    color: white;
+}
+
+.team-member-large h4 {
+    font-size: 28px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.member-bio-full {
+    margin-top: 24px;
+    text-align: left;
+}
+
+.member-bio-full p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Exit Target (Ask Slide) */
+.exit-target {
+    margin-bottom: 24px;
+}
+
+.target-label {
+    font-size: 18px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+}
+
+.target-amount {
+    font-size: 96px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.ask-context {
+    margin-bottom: 40px;
+}
+
+.ask-context p {
+    font-size: 20px;
+    color: var(--text-secondary);
+}
+
 /* Keyboard Hint */
 .keyboard-hint {
     position: fixed;
@@ -677,7 +879,11 @@ p {
     .revenue-card,
     .advantage-item,
     .team-member,
-    .use-of-funds {
+    .use-of-funds,
+    .product-card,
+    .flow-product,
+    .team-member-large,
+    .institutional-trend {
         background: rgba(100, 108, 255, 0.2) !important;
         border: 1px solid rgba(100, 108, 255, 0.3) !important;
     }
@@ -715,5 +921,18 @@ p {
     
     .slide-title {
         font-size: 36px;
+    }
+    
+    .three-products,
+    .products-flow {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-member-large {
+        padding: 40px;
+    }
+    
+    .target-amount {
+        font-size: 64px;
     }
 }
