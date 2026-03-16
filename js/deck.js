@@ -119,11 +119,17 @@ class SlideDeck {
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         
-        prevBtn.style.opacity = this.currentSlide === 0 ? '0.3' : '1';
-        prevBtn.style.cursor = this.currentSlide === 0 ? 'not-allowed' : 'pointer';
+        if (this.currentSlide === 0) {
+            prevBtn.style.visibility = 'hidden';
+        } else {
+            prevBtn.style.visibility = 'visible';
+        }
         
-        nextBtn.style.opacity = this.currentSlide === this.totalSlides - 1 ? '0.3' : '1';
-        nextBtn.style.cursor = this.currentSlide === this.totalSlides - 1 ? 'not-allowed' : 'pointer';
+        if (this.currentSlide === this.totalSlides - 1) {
+            nextBtn.style.visibility = 'hidden';
+        } else {
+            nextBtn.style.visibility = 'visible';
+        }
     }
     
     updateProgress() {
