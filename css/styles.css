@@ -1,6 +1,6 @@
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
+    --primary: #646cff;
+    --primary-dark: #535bf2;
     --secondary: #06b6d4;
     --accent: #f59e0b;
     --bg-white: #ffffff;
@@ -185,11 +185,16 @@ p {
     gap: 24px;
 }
 
+.logo-with-text {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 .logo-img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    margin-bottom: 8px;
 }
 
 .company-name {
@@ -197,7 +202,7 @@ p {
     font-weight: 800;
     letter-spacing: 0.5rem;
     color: var(--text-primary);
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 .tagline {
@@ -232,11 +237,11 @@ p {
 }
 
 .problem-card {
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 40px;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
     transition: transform 0.2s;
 }
 
@@ -334,8 +339,8 @@ p {
 }
 
 .demo-placeholder {
-    background: var(--bg-light);
-    border: 2px dashed var(--border-color);
+    background: rgba(100, 108, 255, 0.1);
+    border: 2px dashed rgba(100, 108, 255, 0.4);
     border-radius: 16px;
     padding: 60px;
     text-align: center;
@@ -353,11 +358,11 @@ p {
 }
 
 .stat-card {
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 40px;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 .stat-card.large {
@@ -398,11 +403,11 @@ p {
 }
 
 .traction-metric {
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 40px 24px;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 .metric-value {
@@ -425,10 +430,10 @@ p {
 }
 
 .revenue-card {
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 40px;
     border-radius: 16px;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 .revenue-card.primary {
@@ -486,10 +491,10 @@ p {
 .advantage-item {
     display: flex;
     gap: 20px;
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 32px;
     border-radius: 16px;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 .advantage-icon {
@@ -514,11 +519,11 @@ p {
 }
 
 .team-member {
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 40px;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 .member-avatar {
@@ -571,11 +576,11 @@ p {
 }
 
 .use-of-funds {
-    background: var(--bg-card);
+    background: rgba(100, 108, 255, 0.2);
     padding: 32px;
     border-radius: 16px;
     margin-bottom: 48px;
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 .use-of-funds h4 {
@@ -673,8 +678,8 @@ p {
     .advantage-item,
     .team-member,
     .use-of-funds {
-        background: #f8fafc !important;
-        border: 1px solid #e2e8f0 !important;
+        background: rgba(100, 108, 255, 0.2) !important;
+        border: 1px solid rgba(100, 108, 255, 0.3) !important;
     }
 }
 
