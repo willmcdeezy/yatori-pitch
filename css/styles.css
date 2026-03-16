@@ -619,6 +619,15 @@ p {
     margin: 8px 0;
 }
 
+.contact-info a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 /* Product Cards (Solution Slide) */
 .three-products {
     display: grid;
@@ -775,6 +784,16 @@ p {
     font-weight: 700;
     margin: 0 auto 24px;
     color: white;
+}
+
+.founder-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 24px;
+    display: block;
+    border: 3px solid var(--primary);
 }
 
 .team-member-large h4 {
