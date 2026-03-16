@@ -1013,6 +1013,19 @@ p {
     box-shadow: 0 4px 12px rgba(100, 108, 255, 0.15);
 }
 
+.product-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
 .video-icon {
     font-size: 28px;
     flex-shrink: 0;
@@ -1050,4 +1063,52 @@ p {
 
 .npm-badge a:hover {
     text-decoration: underline;
+}
+
+/* Roadmap */
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.roadmap-card {
+    background: rgba(100, 108, 255, 0.2);
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+}
+
+.roadmap-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.roadmap-icon {
+    font-size: 28px;
+}
+
+.roadmap-header h4 {
+    color: var(--text-primary);
+    margin: 0;
+    font-size: 22px;
+}
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roadmap-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(100, 108, 255, 0.2);
+    font-size: 15px;
+    color: var(--text-secondary);
+}
+
+.roadmap-list li:last-child {
+    border-bottom: none;
 }
