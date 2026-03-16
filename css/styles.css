@@ -811,6 +811,16 @@ p {
     text-decoration: underline;
 }
 
+.dynamic-link {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.dynamic-link:hover {
+    color: var(--primary-dark);
+}
+
 /* Traction Pre-Revenue */
 .traction-pre-revenue {
     text-align: center;
