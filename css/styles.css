@@ -37,36 +37,37 @@ html, body {
     position: relative;
 }
 
-/* Navigation Controls */
-.nav-btn {
+/* Top Navigation Bar */
+.top-nav {
     position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.95);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.nav-btn {
+    background: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-primary);
-    width: 50px;
-    height: 80px;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-    z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-}
-
-#prevBtn {
-    left: 0;
-    border-radius: 0 8px 8px 0;
-}
-
-#nextBtn {
-    right: 0;
-    border-radius: 8px 0 0 8px;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
 }
 
 .nav-btn:hover {
@@ -76,8 +77,22 @@ html, body {
 }
 
 .slide-counter {
-    position: fixed;
-    bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    min-width: 50px;
+    text-align: center;
+}
+
+.keyboard-hint {
+    display: flex;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid var(--border-color);
+}
     left: 50%;
     transform: translateX(-50%);
     font-size: 14px;
@@ -126,7 +141,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 80px;
+    padding: 80px 80px 40px;
     opacity: 0;
     transform: translateX(100px);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -149,7 +164,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 /* Typography */
@@ -1353,27 +1368,10 @@ p {
     color: var(--text-secondary);
 }
 
-/* Keyboard Hint */
-.keyboard-hint {
-    position: fixed;
-    bottom: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 12px;
-    font-size: 12px;
-    color: var(--text-muted);
-    opacity: 0.6;
-    pointer-events: none;
-}
-
 /* Print Styles for PDF Export */
 @media print {
-    #prevBtn,
-    #nextBtn,
-    .slide-counter,
-    .progress-bar,
-    .keyboard-hint {
+    .top-nav,
+    .progress-bar {
         display: none !important;
     }
 
@@ -1508,6 +1506,19 @@ p {
     
     .marketing-takeaways {
         padding: 16px;
+    }
+    
+    .top-nav {
+        height: 40px;
+        gap: 8px;
+    }
+    
+    .keyboard-hint {
+        display: none;
+    }
+    
+    .slide {
+        padding: 60px 20px 20px;
     }
 }
 
