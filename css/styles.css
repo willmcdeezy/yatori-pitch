@@ -661,6 +661,14 @@ p {
     font-size: 15px;
 }
 
+.solution-tagline {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary);
+    margin-top: 16px;
+}
+
 .market-note {
     font-size: 12px;
     color: var(--primary);
