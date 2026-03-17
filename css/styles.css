@@ -1400,14 +1400,28 @@ p {
     .progress-bar {
         display: none !important;
     }
+    
+    .presentation {
+        height: auto !important;
+        overflow: visible !important;
+    }
+    
+    .slides-container {
+        position: static !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
 
     .slide {
         position: relative !important;
         opacity: 1 !important;
         transform: none !important;
         page-break-after: always;
+        page-break-inside: avoid;
         height: 100vh;
         background: white !important;
+        display: flex !important;
+        padding: 40px 60px !important;
     }
 
     .slide:last-child {
