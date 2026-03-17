@@ -651,6 +651,73 @@ p {
     margin: 0;
 }
 
+/* Proof Slide */
+.proof-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.proof-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.proof-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(100, 108, 255, 0.2);
+    padding: 20px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.proof-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: 0 8px 20px rgba(100, 108, 255, 0.2);
+}
+
+.proof-logo {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.proof-logo-img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.proof-card h4 {
+    font-size: 15px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.proof-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+.proof-source {
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 /* Team */
 .team-grid {
     display: grid;
