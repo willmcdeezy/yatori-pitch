@@ -1397,7 +1397,7 @@ p {
 /* Print Styles for PDF Export */
 @media print {
     @page {
-        size: landscape;
+        size: 16in 9in;
         margin: 0;
     }
     
@@ -1405,6 +1405,8 @@ p {
         height: auto !important;
         overflow: visible !important;
         background: white !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     
     .top-nav,
@@ -1417,6 +1419,7 @@ p {
         height: auto !important;
         overflow: visible !important;
         position: static !important;
+        width: 100% !important;
     }
     
     .slides-container {
@@ -1424,6 +1427,7 @@ p {
         height: auto !important;
         overflow: visible !important;
         display: block !important;
+        width: 100% !important;
     }
 
     .slide {
@@ -1433,20 +1437,36 @@ p {
         page-break-after: always;
         page-break-inside: avoid;
         break-after: page;
-        height: 100vh;
-        min-height: 100vh;
+        width: 16in !important;
+        height: 9in !important;
+        min-height: 9in !important;
+        max-height: 9in !important;
         background: white !important;
         display: flex !important;
-        padding: 40px 60px !important;
-        width: 100% !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0.5in !important;
+        margin: 0 !important;
         left: 0 !important;
-        top: auto !important;
+        top: 0 !important;
+        box-sizing: border-box !important;
         pointer-events: all !important;
     }
 
     .slide:last-child {
         page-break-after: auto;
         break-after: auto;
+    }
+    
+    .slide-content {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 15in !important;
+        max-height: 8in !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
 
     body {
