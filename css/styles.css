@@ -1331,13 +1331,31 @@ p {
 }
 
 .member-bio-full {
-    margin-top: 24px;
+    margin-top: 20px;
     text-align: left;
 }
 
 .member-bio-full p {
-    margin-bottom: 12px;
-    font-size: 16px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.credentials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+
+.credential {
+    background: rgba(100, 108, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    border: 1px solid rgba(100, 108, 255, 0.3);
 }
 
 /* Exit Target (Ask Slide) */
