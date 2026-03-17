@@ -868,6 +868,29 @@ p {
     display: block;
 }
 
+/* NPM Logo Large */
+.npm-logo-large {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.npm-logo-large svg {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.npm-tagline {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: var(--text-secondary);
+    background: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
 .product-card h4 {
     color: var(--text-primary);
     font-size: 20px;
