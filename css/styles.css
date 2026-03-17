@@ -556,6 +556,101 @@ p {
     margin-bottom: 0;
 }
 
+/* Marketing Insights */
+.marketing-period {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.marketing-card {
+    background: rgba(100, 108, 255, 0.2);
+    padding: 20px 16px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(100, 108, 255, 0.3);
+}
+
+.marketing-card.highlight {
+    background: rgba(100, 108, 255, 0.35);
+    border-color: rgba(100, 108, 255, 0.5);
+}
+
+.market-flag {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.marketing-card h4 {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.market-stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.market-stats-row span {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.market-cpc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.market-note {
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.marketing-takeaways {
+    background: rgba(100, 108, 255, 0.15);
+    padding: 20px 28px;
+    border-radius: 16px;
+    border: 1px solid rgba(100, 108, 255, 0.25);
+}
+
+.marketing-takeaways h4 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.marketing-takeaways ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.marketing-takeaways li {
+    padding: 6px 0;
+    font-size: 15px;
+    color: var(--text-secondary);
+}
+
+.cpc-insight {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
 /* Team */
 .team-grid {
     display: grid;
@@ -1192,7 +1287,9 @@ p {
     .team-member-large,
     .institutional-trend,
     .demo-videos,
-    .founder-highlight {
+    .founder-highlight,
+    .marketing-card,
+    .marketing-takeaways {
         background: rgba(100, 108, 255, 0.2) !important;
         border: 1px solid rgba(100, 108, 255, 0.3) !important;
     }
@@ -1271,6 +1368,14 @@ p {
     
     .founder-highlight {
         padding: 20px;
+    }
+    
+    .marketing-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .marketing-takeaways {
+        padding: 16px;
     }
 }
 
