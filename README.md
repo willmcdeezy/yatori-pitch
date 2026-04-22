@@ -1,74 +1,47 @@
 # Yatori Pitch Deck
 
-A modern, responsive HTML pitch deck for Yatori.
+**The Visa Replacement for the Stablecoin Era**
 
-## 🚀 Quick Start
+A 14-slide HTML presentation telling the Yatori story: non-custodial payment rails that bypass the regulatory overhead making traditional fintech expensive and slow.
 
-1. **Open in browser:**
-   ```bash
-   open index.html
-   # or
-   start index.html  # Windows
-   ```
+## Narrative Arc
 
-2. **Navigate slides:**
-   - `←` / `→` arrows or on-screen buttons
-   - `Space` / `Page Down` to advance
-   - `Home` / `End` for first/last slide
-   - `F` for fullscreen
-   - `P` to print/save as PDF
+1. **Title** — The Visa Replacement for the Stablecoin Era
+2. **The Inevitable Shift** — $230B+ stablecoins, institutional adoption accelerating
+3. **The Problem** — Everyone builds custodial = licenses, compliance, overhead
+4. **The Insight** — Non-custodial = no licenses = global from Day 1
+5. **The Product** — Three products, one complete ecosystem
+6. **How It Works** — Merchant phone → consumer phone → 400ms settlement
+7. **Yatori vs Visa** — Side-by-side comparison (the killer slide)
+8. **The Moat** — Network effects + regulation-proof architecture
+9. **Market** — $250T global payments, $10T stablecoin volume by 2028
+10. **Traction** — Pre-revenue, proven demand (Nigeria 7.46% CTR)
+11. **Business Model** — The toll road: free to use, capture on volume
+12. **Team** — Solo founder, App Store approved, all three products shipped
+13. **Roadmap** — Merchant console, embedded wallet, agent integration
+14. **The Ask** — $30M acquisition target, seeking strategic partners
 
-## 📄 Export to PDF
+## Key Insight
 
-**Option 1: Browser Print (Recommended)**
-1. Press `P` or `Ctrl/Cmd + P`
-2. Select "Save as PDF"
-3. Choose layout: **Landscape**
-4. Margins: **None**
-5. Save
+> "We don't hold user funds. We just connect them."
 
-**Option 2: Command Line**
-```bash
-# Using Chrome/Chromium
-chrome --headless --print-to-pdf=yatori-pitch.pdf index.html
-```
+This changes everything:
+- No money transmitter licenses (50 states, 2-3 years, millions in legal)
+- No KYC/AML compliance teams ($10M+ annual burn)
+- No balance sheet risk (funds stay in user wallets)
+- Global from Day 1 (no geographic restrictions)
 
-## 🎨 Customization
+## Running the Deck
 
-### Edit Content
-Open `index.html` and modify the placeholder text marked with `[X]` brackets.
+Open `index.html` in any modern browser. Navigation:
+- `← →` arrow keys or on-screen buttons
+- `F` for fullscreen
+- `P` to print to PDF
+- Touch/swipe supported on mobile
 
-### Change Colors
-Edit `css/styles.css` and modify the CSS variables at the top:
-```css
-:root {
-    --primary: #6366f1;      /* Main brand color */
-    --secondary: #06b6d4;    /* Accent color */
-    --bg-dark: #0f172a;      /* Background */
-    /* ... */
-}
-```
+## Files
 
-### Add Images
-Place images in `assets/` folder and reference them in the HTML.
-
-## 📱 Features
-
-- ✅ Keyboard navigation
-- ✅ Touch/swipe support (mobile)
-- ✅ Fullscreen mode
-- ✅ Progress indicator
-- ✅ Print-optimized for PDF export
-- ✅ Responsive design
-- ✅ Smooth animations
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3 (Grid, Flexbox, Custom Properties)
-- Vanilla JavaScript
-- No dependencies
-
----
-
-Built for Yatori | March 2026
+- `index.html` — Slide content & structure
+- `css/styles.css` — Styling (1743 lines, fully self-contained)
+- `js/deck.js` — Navigation, keyboard shortcuts, progress bar
+- `assets/` — Screenshots & logos

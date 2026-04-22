@@ -891,6 +891,145 @@ p {
     text-decoration: underline;
 }
 
+/* Insight Hero */
+.insight-hero {
+    text-align: center;
+    margin: 24px 0 40px;
+    padding: 32px;
+    background: var(--gradient-1);
+    border-radius: 16px;
+}
+
+.insight-quote {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Comparison Table */
+.comparison-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 20px 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.comparison-header {
+    display: flex;
+    background: var(--bg-card);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.comparison-row {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+}
+
+.comparison-col {
+    flex: 1;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+}
+
+.visa-col {
+    background: #f8fafc;
+    border-right: 1px solid var(--border-color);
+}
+
+.yatori-col {
+    background: rgba(100, 108, 255, 0.08);
+}
+
+.comparison-label {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.visa-col .comparison-label {
+    color: var(--text-muted);
+}
+
+.yatori-col .comparison-label {
+    color: var(--primary);
+}
+
+.comparison-value {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.comparison-value.highlight {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.comparison-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 16px;
+    background: var(--gradient-1);
+    border-radius: 12px;
+    color: white;
+}
+
+.comparison-footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Founder wins list */
+.founder-wins {
+    list-style: none;
+    margin: 12px 0;
+}
+
+.founder-wins li {
+    padding: 6px 0;
+    color: var(--text-secondary);
+    font-size: 15px;
+}
+
+.founder-wins li:before {
+    content: "✓ ";
+    color: var(--success);
+    font-weight: 700;
+}
+
+.founder-kicker {
+    margin-top: 16px;
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+/* Market context */
+.market-context {
+    margin-top: 24px;
+    padding: 20px;
+    background: rgba(100, 108, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.market-context p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+/* Sub-tagline */
+.sub-tagline {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+}
+
 /* Product Cards (Solution Slide) */
 .three-products {
     display: grid;
