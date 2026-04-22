@@ -813,6 +813,54 @@ p {
     font-size: 16px;
 }
 
+/* Links Section */
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto 32px;
+}
+
+.link-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.link-card:hover {
+    background: rgba(100, 108, 255, 0.08);
+    border-color: var(--primary);
+}
+
+.link-icon {
+    font-size: 24px;
+    min-width: 32px;
+    text-align: center;
+}
+
+.link-url {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.link-url:hover {
+    text-decoration: underline;
+}
+
+.link-label {
+    margin-left: auto;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
 /* The Ask */
 .center-content {
     text-align: center;
